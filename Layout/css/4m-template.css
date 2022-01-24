@@ -1,0 +1,327 @@
+﻿.wrapper {
+    width: 100%;
+    min-width: 1020px;
+    margin-left:-42px;
+}
+
+.wrapper .createMode {
+    width: 200px;
+    height: 58px;
+    text-align: center;
+    text-transform: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    position: relative;
+    right: 5px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.wrapper .editMode {
+    width: 200px;
+    height: 58px;
+    text-align: center;
+    text-transform: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    position: relative;
+    right: 15px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+#inactiveBtn {
+    border-radius: 1px;
+    color: black;
+}
+
+.editMode:hover {
+    box-shadow: 2px 2px 18px 0 rgb(0 0 0 / 18%), 0px 0px 8px 0 rgb(0 0 0 / 15%);
+    background-color: #FC9B21 !important;
+    border: 1px solid;
+    border-color: #FFB728;
+}
+
+.createMode:hover {
+    box-shadow: 2px 2px 18px 0 rgb(0 0 0 / 18%), 0px 0px 8px 0 rgb(0 0 0 / 15%);
+    background-color: #28a745 !important;
+    border: 1px solid;
+    border-color: #28a745;
+}
+
+.icons {
+    font-size: 2em;
+    position: relative;
+    top: 4.5px;
+}
+
+input[type="text"]::placeholder {
+    margin-left: 280px;
+    font-size: 14px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.template-table {
+    background-color: #fafafa;
+    height: auto;
+    width: 100%;
+    min-width: 1020px;
+    position: relative;
+    margin: -6px 0 15px -42px;
+    border: 2px solid;
+    border-color: #eeeeee;
+}
+
+#form-table {
+    margin-bottom: 0rem !important;
+    display: table;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+    position: relative;
+    margin-top: -15px;
+}
+
+#templateLbl, #templateInput {
+    display: inline;
+}
+
+th, td {
+    text-align: center;
+    vertical-align: middle !important;
+    padding-top: 1rem !important;
+    padding-bottom: 0.7rem !important;
+}
+
+th {
+    font-weight: bold !important;
+}
+
+#templateLbl {
+    text-transform: none;
+    background-color: #E9ECEF;
+    margin-left: 50px;
+    padding: 18px 35px 18px 35px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: default;
+    margin-top: 30px;
+    border-radius: 5px 0 0 5px;
+}
+
+#templateInput {
+    width: 450px;
+    height: 53px;
+    margin-left: -3px;
+    border: 1px solid;
+    border-color: #E9ECEF;
+    font-size: 14px;
+    margin-top: 30px;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+}
+
+#templateLbl, #templateInput {
+    display: -webkit-inline-box;
+}
+
+.seq {
+    width: 40px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    font-weight: bold;
+    margin: auto;
+    background-color: #E0E0E0;
+}
+
+#levelInput, #levelInput1 {
+    width: 436px;
+    height: 45px;
+    font-size: 14px;
+    margin-left: -22px;
+    margin-top: -2px;
+}
+
+input[name="taskDesc"] {
+    height: 45px;
+    font-size: 14px;
+    margin-top: -5px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: visible;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+input:placeholder-shown {
+    white-space: normal;
+    word-wrap: break-word;
+    display: flex;
+    word-wrap: break-word !important;
+    white-space: normal !important;
+    width: 100%;
+}
+
+#levelName, #levelName1 {
+    text-transform: none;
+    background-color: #E9ECEF;
+    height: 46px;
+    margin-left: 5px;
+    margin-bottom: 0.1rem;
+    padding: 11px 25px 19px 25px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: default;
+    border-radius: 5px 0 0 5px;
+}
+
+input[name="daySel"], input[name="numSel"] {
+    text-align: center;
+    width: 100px;
+    height: 45px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn-floating i {
+    display: inline-block;
+    width: inherit;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.btn-floating {
+    transition: all 0.2s ease-in-out;
+    border-radius: 50%;
+    padding: 11px 13px 8px 13px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.btn-del {
+    background-color: #f44336 !important;
+    cursor: pointer;
+}
+
+.btn-add {
+    background-color: #4caf50 !important;
+}
+
+.btn-del:hover {
+    background-color: #C30C0C !important;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 22%), 0 2px 0px 0 rgb(0 0 0 / 17%);
+}
+
+.btn-add:hover {
+    background-color: #0E810A !important;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 22%), 0 2px 0px 0 rgb(0 0 0 / 17%);
+}
+
+i[name="create"] {
+    margin-left: -20px;
+}
+
+.editKey {
+    background-color: #fafafa;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    top: 8px;
+    float: right;
+    border: 2px solid;
+    border-color: #eeeeee #eeeeee transparent #eeeeee;
+    border-radius: 5px;
+    padding: 15px 18px;
+    z-index: 1;
+}
+
+
+.templateName {
+    height: 20px;
+    width: auto;
+    padding: 15px 100px 15px 80px;
+    border-radius: 0 20px 0 0;
+    text-align: center;
+    text-transform: none;
+    background-color: #E9ECEF;
+    border: 2px solid;
+    border-color: #eeeeee #eeeeee transparent #eeeeee;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: default;
+    margin-left: 0px;
+    position: relative;
+    top: 35px;
+}
+
+.user-group {
+    min-width: 200px;
+}
+
+.user-group:hover {
+    background-color: #D0DCEB;
+    cursor: pointer;
+}
+
+#saveBtn {
+    height: 50px;
+    width: 250px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#nextLvlBtn {
+    height: 50px;
+    width: 250px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    float: right;
+}
+
+#saveBtn:hover {
+    background-color: #28a745 !important;
+    box-shadow: 0 2px 11px 0 rgb(0 0 0 / 22%), 0 -3px 15px 0 rgb(0 0 0 / 17%);
+    border: 1px solid;
+    border-color: #00e25b;
+}
+
+#nextLvlBtn:hover {
+    background-color: #0B4EBE !important;
+    box-shadow: 0 2px 11px 0 rgb(0 0 0 / 22%), 0 -3px 15px 0 rgb(0 0 0 / 17%);
+}
+
+#addIcon {
+    margin-left: 15px;
+}
+
+.button-container {
+    bottom: 0;
+    width: 100%;
+    min-width: 1020px;
+    height: 70px;
+    position: sticky;
+    background-color: white;
+    margin-left: -42px;
+    padding-left: 150px;
+    padding-right: 150px;
+}

@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WorkflowApprovalSystem.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ApprovalFlowSystem</title>
+
+     <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="/Layout/css/master.css" />
+    <link rel="stylesheet" href="/Layout/css/4m-template.css"/>
+    <link href="css/approval-form.css" rel="stylesheet" />
+
+    <!-- Font Awesome JS and CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.11.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- jQuery CDN - Slim version -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" />
+    
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://mdbootstrap.com/live/_doc/js/mdb.min.js"></script>
+
+</head>
+
+<body class="ctm">
+    <div class="main-wrapper">
+
+    <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header-logo">
+                <h3><img src="/Layout/res/Logo.png" /></h3>
+            </div>
+
+            <!--Sidenav-->
+              <ul class="list-unstyled components" style="color: #1A1A1A; ">
+                <li class="active">
+                    <a style="padding: 20px;" href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a style="padding: 20px;" href="#">Template Form</a>
+                </li>
+                <li>
+                    <a style="padding: 20px;" href="#">Approval Form</a>
+                </li>
+                <li>
+                    <a style="padding: 20px;" href="#">Template Overview</a>
+                </li>
+                <li>
+                    <a style="padding: 20px;" href="#">Create Project</a>
+                </li>
+                <li>
+                    <a style="padding: 20px;" href="#">Project Overview</a>
+                </li>
+            </ul>
+        </nav>
+
+             <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                   <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <div id="page-title" class="container body-content">
+                       <asp:ContentPlaceHolder ID="PageTitle" runat="server">
+                       </asp:ContentPlaceHolder>
+                   </div>
+                    
+                   <button type="button" id="logout" class="logout-btn">
+                        <span><i class="fas fa-sign-out-alt navbar-icons"></i></span>
+                   </button>  
+                </div>
+            </nav>
+                  <div class="container body-content">
+                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                 </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+          
+</body>
+</html>

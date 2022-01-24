@@ -1,0 +1,110 @@
+﻿.updates-container {
+    background-color: #fcfcf9;
+    height: 120px;
+    max-width: 1020px;
+    padding: 45px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+}
+
+.container-bg {
+    background-color: #fcfcf9;
+    height: 800px;
+    max-width: 1020px;
+    position: relative;
+    top: 27px;
+    margin: auto;
+    text-align: center;
+}
+
+.container-bg a {
+    margin: 3.1em !important;
+}
+
+.cont-header {
+    margin-right: 5px;
+    padding: 14px 25px 15px 25px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    cursor: default;
+    border-radius: 5px 0 0 5px;
+}
+
+
+.checked {
+    transition: all 0.2s ease-in-out;
+    border-radius: 50%;
+    padding: 17px 4px 5px 8px;
+    height: 50px;
+    margin: 2.8em !important;
+    position: relative;
+    top: 6px;
+}
+
+.checked i {
+    display: inline-block;
+    width: inherit;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.75rem;
+}
+
+.in-progress {
+    padding: 8px 12px 8px 15px;
+    border: 3px solid;
+    border-radius: 50%;
+    border-color: darkblue;
+    background-color: #dbeeff;
+    margin: 2.8em !important;
+}
+
+.incomplete {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px 15px;
+    background: lightgrey;
+    border: 3px solid dimgrey;
+    color: grey;
+    text-align: center;
+    margin: 2.8em !important;
+}
+
+.checked, .in-progress, .incomplete {
+    display: inline;
+}
+
+.approvalKey {
+    width: 80%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: relative;
+    top: 38px;
+    border: 2px solid;
+    border-color: #eeeeee #eeeeee #eeeeee #eeeeee;
+    border-radius: 5px;
+    padding: 25px 5px;
+    margin: auto;
+    padding-right: 68px;
+    color: gray;
+}
+
+.approvalKey img {
+    margin-right: 21px;
+    margin-left: 156px;
+}
+
+.appr-header {
+    padding: 14px 25px 15px 25px;
+    box-sizing: border-box;
+    font-weight: bold;
+    cursor: default;
+    text-align:left;
+    border-radius: 5px 0 0 5px;
+    position:relative;
+    top: 50px;
+    left: 10px;
+}
