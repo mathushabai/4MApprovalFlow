@@ -1,8 +1,8 @@
 ﻿.updates-container {
     background-color: #fcfcf9;
-    height: 120px;
+    height: 110px;
     max-width: 1020px;
-    padding: 45px;
+    padding: 37px;
     font-weight: bold;
     margin: auto;
     text-align: center;
@@ -10,19 +10,22 @@
 
 .container-bg {
     background-color: #fcfcf9;
-    height: 800px;
+    height: auto;
     max-width: 1020px;
     position: relative;
     top: 27px;
     margin: auto;
     text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 120px;
 }
 
 .container-bg a {
-    margin: 3.1em !important;
+    margin: 3.1em;
 }
 
 .cont-header {
+    font-size: 15px;
     margin-right: 5px;
     padding: 14px 25px 15px 25px;
     box-sizing: border-box;
@@ -32,12 +35,12 @@
     border-radius: 5px 0 0 5px;
 }
 
-
 .checked {
     transition: all 0.2s ease-in-out;
     border-radius: 50%;
-    padding: 17px 4px 5px 8px;
+    padding: 16px 3px 4px 8px;
     height: 50px;
+    background-color: powderblue;
     margin: 2.8em !important;
     position: relative;
     top: 6px;
@@ -53,24 +56,29 @@
 }
 
 .in-progress {
-    padding: 8px 12px 8px 15px;
-    border: 3px solid;
+    padding: 6px 8px 6px 14px;
+    border: 6px solid;
     border-radius: 50%;
-    border-color: darkblue;
-    background-color: #dbeeff;
+    border-color: powderblue;
+    outline: solid 2px skyblue;
+    background-color: royalblue;
+    font-weight: bold;
+    color: white !important;
     margin: 2.8em !important;
 }
 
 .incomplete {
     border-radius: 50%;
+    font-size: 1.0rem;
     width: 36px;
     height: 36px;
-    padding: 8px 15px;
-    background: lightgrey;
-    border: 3px solid dimgrey;
-    color: grey;
+    padding: 10px 17px;
+    background: #eeeeee;
+    border: 1px solid #bcbcbc;
+    color: darkgrey !important;
     text-align: center;
     margin: 2.8em !important;
+    font-weight: normal !important;
 }
 
 .checked, .in-progress, .incomplete {
@@ -79,17 +87,18 @@
 
 .approvalKey {
     width: 80%;
-    font-size: 0.8rem;
+    font-size: 12px;
     font-weight: bold;
     position: relative;
     top: 38px;
     border: 2px solid;
     border-color: #eeeeee #eeeeee #eeeeee #eeeeee;
     border-radius: 5px;
-    padding: 25px 5px;
+    padding: 19px 5px;
     margin: auto;
+    cursor: default;
     padding-right: 68px;
-    color: gray;
+    color: gray !important;
 }
 
 .approvalKey img {
@@ -102,9 +111,204 @@
     box-sizing: border-box;
     font-weight: bold;
     cursor: default;
-    text-align:left;
+    text-align: left;
     border-radius: 5px 0 0 5px;
-    position:relative;
-    top: 50px;
-    left: 10px;
+    position: relative;
+    top: 103px;
+    right: 355px;
+}
+
+.table-appr {
+    margin: auto;
+    text-align: center;
+    width: 818px;
+    margin-top: 85px;
+}
+
+.table-appr tr {
+    height: 82px;
+}
+
+.seq-appr {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 0px;
+    width: 155px;
+}
+
+.icon-appr {
+    width: 149px;
+}
+
+.item-appr {
+    font-weight: bold;
+    text-align: left;
+    width: 383px;
+    font-size: 14px;
+}
+
+.icon-appr .checked {
+    padding: 18px 8px 5px 8px;
+    position: relative;
+    top: 0px;
+}
+
+.icon-appr .in-progress {
+    padding: 8px 14px;
+    border: 6px solid;
+    border-radius: 50%;
+    border-color: powderblue;
+    outline: solid 2px skyblue;
+    background-color: royalblue;
+    font-weight: bold;
+    color: white !important;
+}
+
+.margin-border {
+    height: 4px;
+    width: auto;
+    background-color: #dddddd;
+    margin-top: 40px;
+    margin-bottom:40px;
+}
+
+.remark-table {
+    width: 780px;
+    margin: auto;
+    margin-top: 40px;
+    background: white;
+    margin-bottom: 20px;
+}
+
+.remark-row td {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.remark-table tbody, .remark-table th, .remark-table td {
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.attach {
+    color: dodgerblue !important;
+    text-decoration: underline !important;
+}
+
+.days-head {
+    position: relative;
+    left: 40px;
+    float: left;
+    margin: 10px !important;
+    font-weight: bold;
+    white-space: pre-line;
+}
+
+.days-rem {
+    position: relative;
+    color: red !important;
+    text-align: left;
+    margin: 10px !important;
+    margin-left: 46px !important;
+    float: left;
+    font-weight: bold;
+    white-space: pre-line;
+}
+
+.days-head, .days-rem {
+    display: inline-block;
+}
+
+.form-group {
+    position: relative;
+    top: 78px;
+    text-align: left;
+}
+
+.form-remarks {
+    position: relative;
+    top: 65px;
+}
+
+#remarksLbl {
+    float: left;
+    position: relative;
+    top: 39px;
+    left: 51px;
+    margin-right: 150px;
+    font-weight: bold;
+}
+
+#remarksLbl, #remarks {
+    display: inline-block;
+}
+
+
+#attach-label, #attachUpload {
+    display: inline-flex;
+}
+
+#attach-label {
+    margin-left: -141px;
+    float: left;
+    font-weight: bold;
+}
+
+#attachUpload {
+    position: relative;
+    top: -10px;
+    left: 22px;
+    margin: 0;
+    color: black !important;
+    text-transform: none !important;
+    font-weight: bold;
+}
+
+#onHoldBtn {
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-transform: none;
+    font-size: 15px;
+}
+
+#onHoldIcon {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#approveBtn {
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+    margin-top: 10px;
+    float: right;
+    text-transform: none;
+    font-size: 15px;
+}
+
+#approveIcon {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#approveBtn, #approveIcon {
+    display: inline-block;
+}
+
+#onHoldBtn:hover {
+    box-shadow: 2px 2px 18px 0 rgb(0 0 0 / 18%), 0px 0px 8px 0 rgb(0 0 0 / 15%);
+    background-color: #FC9B21 !important;
+    border: 1px solid;
+    border-color: #FFB728;
+}
+
+#approveBtn:hover {
+    box-shadow: 2px 2px 18px 0 rgb(0 0 0 / 18%), 0px 0px 8px 0 rgb(0 0 0 / 15%);
+    background-color: #28a745 !important;
+    border: 1px solid;
+    border-color: #28a745;
 }
